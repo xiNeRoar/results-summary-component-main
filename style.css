@@ -17,3 +17,82 @@
   /* (https://fonts.google.com/specimen/Hanken+Grotesk) */
   /* - Weights: 500, 700, 800 */
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 1920px;
+  width: 99%;
+}
+
+main {
+  background-color: var(--White);
+  border-radius: 1em;
+  border: 1px solid black;
+  position: absolute;
+  width: 26.35rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-family: var(--font);
+  font-size: var(--p-Font-size);
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  text-align: center;
+  /* gap: 1rem; */
+  padding: 1rem;
+}
+
+section:nth-of-type(1) {
+  border-radius: 1em;
+  background-color: var(--bg-Light-royal-blue);
+  color: var(--White);
+  font-weight: 300;
+}
+
+section h2 {
+  font-size: 15px;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--circle-Violet-blue);
+  width: 6.45em;
+  height: 6.45em;
+  border-radius: 50%;
+}
+
+.result-container p:nth-child(1) {
+  font-size: 2.2em;
+  font-weight: 800;
+}
+
+.result-container p:nth-child(2) {
+  font-size: 0.7em;
+}
+
+section:nth-of-type(1) :nth-child(3) {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+section:nth-of-type(1) :nth-child(4) {
+  font-size: 0.6em;
+  max-width: 85%;
+}
